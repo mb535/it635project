@@ -1,0 +1,32 @@
+<?php
+//error_log(print_r($v, TRUE), 3, '/home/mervin/git/rabbitmqphp_example/errors.txt');
+if(!isset($_SESSION["user"])){
+  header("Location: index.html");
+}
+?>
+<html>
+
+
+<form action="index.php" method="post">
+        <input type="hidden" name="action" value="auth_login">
+
+        <h2>  IT635 Project</h2>
+        <h2><legend>Login</legend></h2>
+            
+              <label for="username">username:</label>
+              <input type='text' name='username' id='username'  > 
+           
+            
+            
+              <label for="password">Password:</label>
+              <input type='text' name="password"  id="password" > 
+            
+            
+
+            
+            <input type="submit" value="Submit">
+
+        
+      </form>
+
+</html>
