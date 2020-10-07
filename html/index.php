@@ -7,8 +7,8 @@ include("db_functions.php");
 
 $action = filter_input(INPUT_POST, "action");
 //$usern = filter_input(INPUT_POST, 'username');
-echo $usern;
-echo $action;
+//echo $usern;
+//echo $action;
 
 if ($action == 'auth_login1'){
     $user = filter_input(INPUT_POST, 'username');
@@ -49,7 +49,7 @@ if($action== 'take_quest'){
 }
 if($action== 'complete_quest'){
 	$quest_id = filter_input(INPUT_POST, 'id');
-	echo $quest_id;
+	//echo $quest_id;
 	complete_quest($quest_id);
 	header("Refresh:0; url=questlist.php");
 }
@@ -64,9 +64,9 @@ if($action== 'generate_quest'){
 	$q_item = $q_rewards['type'];
 	$q_amt = $q_rewards['amount'];
 	$q_reward = "$q_amt $q_item";
-	echo $q_reward;
-	echo "<br>".$q_giver; echo "<br>".$q_location;echo "<br>".$q_type; echo "<br>".$q_desc;
-	echo "<br>"."quest generated";
+	//echo $q_reward;
+	//echo "<br>".$q_giver; echo "<br>".$q_location;echo "<br>".$q_type; echo "<br>".$q_desc;
+	//echo "<br>"."quest generated";
 	add_quest($q_giver,$q_location,$q_type,$q_desc,$q_reward);
 	header("Refresh:0; url=questlist.php");
 }

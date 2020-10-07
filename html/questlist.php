@@ -89,7 +89,7 @@ table, th, td {
         <?php endforeach; ?>
       </tbody>
     </table>
-    <h3><a href=".">Logout</a></h3>
+    <h3><a href="index.html">Logout</a></h3>
 
 </body>
 </html>

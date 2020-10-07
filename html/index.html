@@ -1,4 +1,5 @@
 <?php
+session_start();
 //error_log(print_r($v, TRUE), 3, '/home/mervin/git/rabbitmqphp_example/errors.txt');
 if(!isset($_SESSION["user"])){
   header("Location: index.html");
