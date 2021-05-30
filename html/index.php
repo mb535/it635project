@@ -74,3 +74,29 @@ if($action== 'generate_quest'){
     //header("Refresh:0; url=questlist.php");
     
 ?>
+<html>
+
+
+<form action="index.php" method="post">
+        <input type="hidden" name="action" value="auth_login">
+
+        <h2>  IT635 Project</h2>
+        <h2><legend>Login</legend></h2>
+            
+              <label for="username">username:</label>
+              <input type='text' name='username' id='username'  > 
+           
+            
+            
+              <label for="password">Password:</label>
+              <input type='text' name="password"  id="password" > 
+            
+            
+
+            
+            <input type="submit" value="Submit">
+
+        
+      </form>
+
+</html>
