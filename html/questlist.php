@@ -10,6 +10,11 @@ $taken_quests = get_takenquests();
 
 <head>
   <title>Tasklist</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 table, th, td {
   border: 1px solid black;
@@ -22,7 +27,7 @@ table, th, td {
     <h2>Quest Board</h2>
               
         
-    <table style="width:100%">
+    <table style="width:100%" class="table">
       <thead>
         <tr>
           <th>Issued By</th>
@@ -60,7 +65,7 @@ table, th, td {
     <h2>Taken Quest</h2>
               
     <div >          
-    <table >
+    <table class="table">
       <thead>
         <tr>
           <th>Issued by</th>
